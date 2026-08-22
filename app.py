@@ -350,7 +350,7 @@ with left_col:
     )
     if uploaded:
         img = Image.open(uploaded).convert("RGB")
-        st.image(img, use_column_width=True, caption=uploaded.name)
+        st.image(img, use_container_width=True, caption=uploaded.name)
 
 with right_col:
     st.markdown('<div class="section-label">Prediction Results</div>', unsafe_allow_html=True)
